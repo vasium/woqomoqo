@@ -1,15 +1,12 @@
-// import styled from "styled-components";
 import { Link } from "react-router-dom";
-// import { Link as LinkR } from "react-router-dom";
-// import { Link as LinkS } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import "./Styles.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <>
       <div className="nav">
-        <div className="nav-bar-container">
+        <div className="navbar-container">
           <Link className="nav-logo" to="/">
             Woqomoqo
           </Link>
@@ -23,22 +20,22 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="about">
+              <Link className="nav-links" to="skills">
                 Skills
               </Link>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="about">
+              <Link className="nav-links" to="portfolio">
                 Portfolio
               </Link>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="about">
+              <Link className="nav-links" to="cv">
                 CV
               </Link>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="about">
+              <Link className="nav-links" to="contact">
                 Contact
               </Link>
             </li>
