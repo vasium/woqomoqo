@@ -1,27 +1,9 @@
 import "./Hero.css";
 import Video from "../src/videos/video.mp4";
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
-import { useState } from "react";
 import Button from "./Button";
 
 const Hero = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
-
-  const hoverMe = (hover) => {
-    console.log("hover");
-    {
-      hover ? (
-        <MdArrowForward className="arrow-forward" />
-      ) : (
-        <MdKeyboardArrowRight className="arrow-right" />
-      );
-    }
-  };
-
+  const buttonLink = "/signup";
   const vid = document.getElementById("video-bg");
 
   if (vid) {
@@ -51,9 +33,7 @@ const Hero = () => {
             modi iste?
           </p>
           <div className="hero-btn-wrapper">
-            <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
-              Get started{hoverMe}
-            </Button>
+            <Button buttonLink={buttonLink}>Get started</Button>
           </div>
         </div>
       </div>
