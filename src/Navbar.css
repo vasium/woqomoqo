@@ -12,7 +12,7 @@
 }
 
 .nav-logo {
-  color: #01bf71;
+  color: #2e89c5;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -30,7 +30,7 @@
 
 .nav-btn-link {
   border-radius: 50px;
-  background: #01bf71;
+  background: #2e89c5;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
@@ -86,7 +86,7 @@
 }
 
 .nav-links:active {
-  border-bottom: 3px solid #01bf71;
+  border-bottom: 3px solid #2e89c5;
 }
 
 @media screen and (max-width: 768px) {

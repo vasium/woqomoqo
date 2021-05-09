@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 
@@ -21,6 +22,7 @@ function Home() {
     <>
       <Sidebar toggle={toggle} />
       <Navbar toggle={toggle} />
+      <Hero />
     </>
   );
 }

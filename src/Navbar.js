@@ -41,9 +41,9 @@ const Navbar = ({ toggle }) => {
             </li>
           </ul>
           <div className="nav-btn">
-            <Link className="nav-btn-link" to="/signin/">
+            <button className="nav-btn-link" to="/signin/">
               Sign In
-            </Link>
+            </button>
           </div>
         </div>
       </div>

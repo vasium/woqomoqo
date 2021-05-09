@@ -51,7 +51,7 @@
 }
 
 .sidebar-link:hover {
-  color: #01bf71;
+  color: #2e89c5;
   transition: 0.2s ease-in-out;
 }
 
@@ -62,7 +62,7 @@
 
 .sidebar-route {
   border-radius: 50px;
-  background: #01bf71;
+  background: #2e89c5;
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;
