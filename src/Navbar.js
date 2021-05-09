@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="nav">
         <div className="nav-bar-container">
           <Link className="nav-logo" to="/">
-            doola
+            Woqomoqo
           </Link>
           <div className="mobile-icon">
             <FaBars />
