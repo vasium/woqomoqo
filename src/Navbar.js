@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <div className="nav">
@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link className="nav-logo" to="/">
             Woqomoqo
           </Link>
-          <div className="mobile-icon">
+          <div className="mobile-icon" onClick={toggle}>
             <FaBars />
           </div>
           <ul className="nav-menu">

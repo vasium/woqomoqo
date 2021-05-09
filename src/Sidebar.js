@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import { FaTimes } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({ toggle }) => {
   return (
-    <aside className="sidebar-container">
-      <div className="icon">
+    <aside
+      className="sidebar-container"
+      id="sidebar-container"
+      onClick={toggle}
+    >
+      <div className="icon" onClick={toggle}>
         <div className="close-icon">
           <FaTimes />
         </div>
