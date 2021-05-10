@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import "./Navbar.css";
 
@@ -7,37 +8,37 @@ const Navbar = ({ toggle }) => {
     <>
       <div className="nav">
         <div className="navbar-container">
-          <Link className="nav-logo" to="/">
+          <LinkR className="nav-logo" to="/">
             Woqomoqo
-          </Link>
+          </LinkR>
           <div className="mobile-icon" onClick={toggle}>
             <FaBars />
           </div>
           <ul className="nav-menu">
             <li className="nav-link">
-              <Link className="nav-links" to="about">
+              <LinkS className="nav-links" to="about">
                 About
-              </Link>
+              </LinkS>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="skills">
+              <LinkS className="nav-links" to="skills">
                 Skills
-              </Link>
+              </LinkS>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="portfolio">
+              <LinkS className="nav-links" to="portfolio">
                 Portfolio
-              </Link>
+              </LinkS>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="cv">
+              <LinkS className="nav-links" to="cv">
                 CV
-              </Link>
+              </LinkS>
             </li>
             <li className="nav-link">
-              <Link className="nav-links" to="contact">
+              <LinkR className="nav-links" to="contact">
                 Contact
-              </Link>
+              </LinkR>
             </li>
           </ul>
           <div className="nav-btn">

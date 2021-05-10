@@ -14,6 +14,9 @@ const About = ({
   lightText,
   darkText,
   imgStart,
+  primary,
+  dark,
+  dark2,
 }) => {
   const background = lightBg ? "#fff" : "#000";
 
@@ -78,11 +81,19 @@ const About = ({
                 <div className="btn-wrap">
                   <Button
                     buttonLink={"home"}
-                    primary={true}
+                    // primary={true}
                     secondary={true}
                     big={true}
                     dark={true}
                     fontBig={true}
+                    smooth={true}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    duration={500}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
                   </Button>

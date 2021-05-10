@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 import "./Sidebar.css";
 import { FaTimes } from "react-icons/fa";
 
@@ -16,21 +16,21 @@ const Sidebar = ({ toggle }) => {
       </div>
       <div className="sidebar-wrapper">
         <ul className="sidebar-menu">
-          <Link className="sidebar-link" to="about">
+          <LinkS className="sidebar-link" to="about">
             About
-          </Link>
-          <Link className="sidebar-link" to="skills">
+          </LinkS>
+          <LinkS className="sidebar-link" to="skills">
             Skills
-          </Link>
-          <Link className="sidebar-link" to="portfolio">
+          </LinkS>
+          <LinkS className="sidebar-link" to="portfolio">
             Portfolio
-          </Link>
-          <Link className="sidebar-link" to="cv">
+          </LinkS>
+          <LinkS className="sidebar-link" to="cv">
             CV
-          </Link>
-          <Link className="sidebar-link" to="contact">
+          </LinkS>
+          <LinkS className="sidebar-link" to="contact">
             Contact
-          </Link>
+          </LinkS>
         </ul>
         <div className="side-btn-wrap">
           <div className="sidebar-route" to="/signin">
