@@ -5,10 +5,10 @@ export const homeObjOne = {
   lightBg: true,
   lightText: true,
   // lightTextDesc: true,
-  topLine: "Premium Bank",
-  headLine: "Unlimited Transactions with zero fees",
+  topLine: "About",
+  headLine: "My Skills & Experience",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur cumque odit maxime illo nesciunt, quidem quaerat adipisci molestias voluptatem doloribus magnam tenetur rem ipsa eos mollitia iusto minus reiciendis!",
+    "My knowledge is of a wide range. From photo and video editing, to 3D and UX/UI design and from programming, to mobile applications development. Lately though I discovered a new passion, Virtual and Augmented Reality! My focus now is on AR/VR and immersive computing. My tools among others are Unity, C#, Maya, Blender, Photoshop, Visual Studio, and After Effects. I am mainly a generalist but I can be flexible when it’s needed. I am also up to date with Agile methodologies like Scrum, Lean Software Development and Kanban.",
   buttonLabel: "Get started",
   imgStart: false,
   img: image,
