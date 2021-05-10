@@ -3,7 +3,6 @@ import Video from "../src/videos/video.mp4";
 import Button from "./Button";
 
 const Hero = () => {
-  const buttonLink = "/signup";
   const vid = document.getElementById("video-bg");
 
   if (vid) {
@@ -26,14 +25,18 @@ const Hero = () => {
         </div>
         <div className="hero-content">
           <h1 className="hero-h1">Vasilis Zotikas</h1>
-          <p className="hero-p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            velit non nobis, distinctio quisquam numquam at eius? Veniam ea vel
-            expedita, nostrum cupiditate unde soluta excepturi totam! Animi,
-            modi iste?
-          </p>
+          <p className="hero-p">VR Developer | Web Developer | Programmer</p>
           <div className="hero-btn-wrapper">
-            <Button buttonLink={buttonLink}>Get started</Button>
+            <Button
+              buttonLink={"/signup"}
+              primary={true}
+              secondary={true}
+              big={true}
+              dark={true}
+              fontBig={true}
+            >
+              Get started
+            </Button>
           </div>
         </div>
       </div>
