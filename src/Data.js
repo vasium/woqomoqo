@@ -1,7 +1,7 @@
 import image1 from "../src/images/svg-1.svg";
 import image2 from "../src/images/svg-2.svg";
 import image3 from "../src/images/svg-3.svg";
-import image4 from "../src/images/svg-4.svg";
+// import image4 from "../src/images/svg-4.svg";
 import image5 from "../src/images/svg-5.svg";
 
 export const homeObjOne = {
@@ -21,6 +21,7 @@ export const homeObjOne = {
   primary: false,
   secondary: false,
   darkText: true,
+  to: "",
 };
 
 export const homeObjTwo = {
@@ -40,6 +41,7 @@ export const homeObjTwo = {
   primary: true,
   secondary: true,
   darkText: false,
+  to: "",
 };
 
 export const homeObjThree = {
@@ -59,6 +61,7 @@ export const homeObjThree = {
   primary: false,
   secondary: false,
   darkText: true,
+  to: "",
 };
 
 export const homeObjFour = {
@@ -78,6 +81,7 @@ export const homeObjFour = {
   primary: false,
   secondary: false,
   darkText: true,
+  to: "",
 };
 
 export const homeObjFive = {
@@ -97,4 +101,5 @@ export const homeObjFive = {
   primary: false,
   secondary: false,
   darkText: true,
+  to: "",
 };

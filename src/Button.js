@@ -12,6 +12,7 @@ const Button = ({
   big,
   dark,
   fontBig,
+  to,
 }) => {
   const [hover, setHover] = useState(null);
 
@@ -46,6 +47,7 @@ const Button = ({
       onMouseEnter={hoverOn}
       onMouseLeave={hoverOff}
       className="button"
+      to={to}
       style={{
         background,
         fontSize,

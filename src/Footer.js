@@ -1,4 +1,6 @@
 import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkS } from "react-scroll";
+
 import { animateScroll } from "react-scroll";
 import "./Footer.css";
 import {
@@ -114,17 +116,22 @@ const Footer = () => {
           </div>
           <div className="socialmedia">
             <div className="socialmedia-wrap">
-              <div
+              {/* <LinkS
                 className="socialmedia-logo"
                 onClick={toggleHome}
-                to="/"
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
+                to="/"
               >
                 <img className="footer-logo-icon" src={logo} alt="" />
-              </div>
+              </LinkS> */}
+
+              <LinkR className="socialmedia-logo" to="/" onClick={toggleHome}>
+                <img className="footer-logo-icon" src={logo} alt="" />
+              </LinkR>
+
               <small className="website-rights">
                 Vasilis Zotikas (woqomoqo) © {new Date().getFullYear()}. All
                 rights reserved
@@ -136,6 +143,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Facebook"
+                  to=""
                 >
                   <FaFacebook />
                 </LinkR>
@@ -145,6 +153,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
+                  to=""
                 >
                   <FaInstagram />
                 </LinkR>
@@ -154,6 +163,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Youtube"
+                  to=""
                 >
                   <FaYoutube />
                 </LinkR>
@@ -163,6 +173,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Twitter"
+                  to=""
                 >
                   <FaTwitter />
                 </LinkR>
@@ -172,6 +183,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Linkedin"
+                  to=""
                 >
                   <FaLinkedin />
                 </a>

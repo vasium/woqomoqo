@@ -34,6 +34,7 @@ const Hero = () => {
           <div className="hero-btn-wrapper">
             <Button
               buttonLink={toggleHome}
+              to=""
               primary={true}
               secondary={true}
               big={true}

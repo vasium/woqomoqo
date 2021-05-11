@@ -4,7 +4,7 @@ import "./App.css";
 import {
   homeObjOne,
   homeObjTwo,
-  homeObjThree,
+  // homeObjThree,
   homeObjFour,
   homeObjFive,
 } from "./Data";
@@ -35,7 +35,7 @@ function Home() {
       <Hero />
       <About {...homeObjOne} />
       <About {...homeObjTwo} />
-      {/* <About {...homeObjThree} /> */}
+
       <About {...homeObjFour} />
       <Portfolio />
       <About {...homeObjFive} />

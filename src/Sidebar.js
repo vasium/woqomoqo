@@ -1,19 +1,8 @@
 import { Link as LinkS } from "react-scroll";
 import "./Sidebar.css";
 import { FaTimes } from "react-icons/fa";
-import { useState, useEffect } from "react";
 
 const Sidebar = ({ toggle, open }) => {
-  // const [isOpen, setIsOpen] = useState(null);
-
-  // const toggle1 = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
-  // useEffect(() => {
-  //   setIsOpen(false);
-  // }, []);
-
   const opacity = open ? "100%" : "0";
   const top = open ? "0" : "-100%";
 
@@ -21,7 +10,6 @@ const Sidebar = ({ toggle, open }) => {
     <aside
       className="sidebar-container"
       id="sidebar-container"
-      // onClick={(toggle, toggle1)}
       style={{ opacity, top }}
     >
       <div className="icon" onClick={toggle}>

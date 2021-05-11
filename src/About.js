@@ -29,25 +29,9 @@ const About = ({
     color: darkText ? "#010606" : "#fff",
   };
 
-  // ---
-  // const gridTemplate = {
-  //   gridTemplateAreas: imgStart
-  //     ? `
-  //                   'col2 col1'`
-  //     : `'col1 col2'
-  //               `,
-  // };
-
-  // const myDivStyle = {
-  //   gridTemplateAreas: `"col2 col1"`,
-  // };
-
-  //---
-
   const newGridTemplate = imgStart ? "'col1 col2'" : "'col2 col1'";
   const mediaMatch = window.matchMedia("(min-width: 768px)");
   const [matches, setMatches] = useState(mediaMatch.matches);
-  console.log(newGridTemplate);
   useEffect(() => {
     const handler = (e) => setMatches(e.matches);
     mediaMatch.addListener(handler);
@@ -88,8 +72,9 @@ const About = ({
                 <div className="btn-wrap">
                   <Button
                     buttonLink={toggleHome}
+                    to=""
                     // primary={true}
-                    secondary={false}
+                    // secondary={false}
                     big={true}
                     // dark={true}
                     fontBig={true}
