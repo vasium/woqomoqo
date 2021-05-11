@@ -1,6 +1,7 @@
 import "./Hero.css";
 import Video from "../src/videos/video.mp4";
 import Button from "./Button";
+import { animateScroll } from "react-scroll";
 
 const Hero = () => {
   const vid = document.getElementById("video-bg");
@@ -8,6 +9,10 @@ const Hero = () => {
   if (vid) {
     vid.playbackRate = 0.5;
   }
+
+  const toggleHome = () => {
+    animateScroll.scrollToTop();
+  };
 
   return (
     <div>
@@ -28,7 +33,7 @@ const Hero = () => {
           <p className="hero-p">VR Developer | Web Developer | Programmer</p>
           <div className="hero-btn-wrapper">
             <Button
-              buttonLink={"/signup"}
+              buttonLink={toggleHome}
               primary={true}
               secondary={true}
               big={true}

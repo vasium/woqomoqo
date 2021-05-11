@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react";
 import About from "./About";
 import "./App.css";
-import { homeObjOne, homeObjThree, homeObjTwo } from "./Data";
+import {
+  homeObjOne,
+  homeObjTwo,
+  homeObjThree,
+  homeObjFour,
+  homeObjFive,
+} from "./Data";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import Portfolio from "./Portfolio";
 import Sidebar from "./Sidebar";
 
 function Home() {
@@ -27,7 +35,12 @@ function Home() {
       <Hero />
       <About {...homeObjOne} />
       <About {...homeObjTwo} />
-      <About {...homeObjThree} />
+      {/* <About {...homeObjThree} /> */}
+      <About {...homeObjFour} />
+      <Portfolio />
+      <About {...homeObjFive} />
+
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./About.css";
 import Button from "./Button";
+import { animateScroll } from "react-scroll";
 
 const About = ({
   topLine,
@@ -15,6 +16,7 @@ const About = ({
   darkText,
   imgStart,
   primary,
+  secondary,
   dark,
   dark2,
 }) => {
@@ -64,6 +66,11 @@ const About = ({
   };
 
   //---
+
+  const toggleHome = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <>
       <div className="about-container" style={{ background }} id={id}>
@@ -80,20 +87,21 @@ const About = ({
                 </p>
                 <div className="btn-wrap">
                   <Button
-                    buttonLink={"home"}
+                    buttonLink={toggleHome}
                     // primary={true}
-                    secondary={true}
+                    secondary={false}
                     big={true}
-                    dark={true}
+                    // dark={true}
                     fontBig={true}
-                    // smooth={true}
-                    // spy={true}
-                    // exact="true"
-                    // offset={-80}
-                    // duration={500}
-                    // primary={primary ? 1 : 0}
-                    // dark={dark ? 1 : 0}
-                    // dark2={dark2 ? 1 : 0}
+                    smooth={true}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    duration={500}
+                    primary={primary ? 1 : 0}
+                    secondary={secondary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
                   </Button>

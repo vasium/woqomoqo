@@ -6,7 +6,7 @@
   background: #0d0d0d;
   display: grid;
   align-items: center;
-  top: -100%;
+  top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
   opacity: 0%;
@@ -51,7 +51,7 @@
 }
 
 .sidebar-link:hover {
-  color: #2e89c5;
+  color: var(--main-color);
   transition: 0.2s ease-in-out;
 }
 
@@ -62,7 +62,7 @@
 
 .sidebar-route {
   border-radius: 50px;
-  background: #2e89c5;
+  background: var(--main-color);
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;

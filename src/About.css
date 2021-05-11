@@ -39,20 +39,21 @@
 }
 
 .top-line {
-  color: #2e89c5;
-  font-size: 16px;
+  color: var(--main-color);
+  font-size: 2.5rem;
   line-height: 16px;
   font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
+  /* letter-spacing: 1.4px; */
+  /* text-transform: uppercase; */
   margin-bottom: 16px;
 }
 
 .heading {
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
+  margin-bottom: 44px;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 200;
+  letter-spacing: 1.4px;
   color: #f7f8fa;
 }
 

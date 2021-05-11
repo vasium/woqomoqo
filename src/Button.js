@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link as LinkR } from "react-router-dom";
+
 import "./Button.css";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import { useEffect, useState } from "react";
@@ -32,16 +33,16 @@ const Button = ({
   //   setOpen(true);
   // }, []);
 
-  const prim = primary ? "#2e89c5" : "#010606";
-  const sec = secondary ? "#fff" : "#2e89c5";
+  const prim = primary ? "#099AC8" : "#010606";
+  const sec = secondary ? "#fff" : "#099AC8";
   const fontSize = fontBig ? "20px" : "16px";
   const color = dark ? "#010606" : "#fff";
   const padding = big ? "14px 48px" : "12px 30px";
   const background = !hover ? prim : sec;
 
   return (
-    <Link
-      to={buttonLink}
+    <LinkR
+      onClick={buttonLink}
       onMouseEnter={hoverOn}
       onMouseLeave={hoverOff}
       className="button"
@@ -58,7 +59,7 @@ const Button = ({
       ) : (
         <MdKeyboardArrowRight className="arrow-right" />
       )}
-    </Link>
+    </LinkR>
   );
 };
 

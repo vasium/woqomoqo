@@ -12,7 +12,7 @@
 }
 
 .nav-logo {
-  color: #2e89c5;
+  color: var(--main-color);
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -23,6 +23,15 @@
   text-decoration: none;
 }
 
+.nav-logo-icon {
+  justify-self: flex-start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* margin-left: 24px; */
+  height: 24px;
+}
+
 .nav-btn {
   display: flex;
   align-items: center;
@@ -30,7 +39,7 @@
 
 .nav-btn-link {
   border-radius: 50px;
-  background: #2e89c5;
+  background: var(--main-color);
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
@@ -85,8 +94,8 @@
   cursor: pointer;
 }
 
-.nav-links:active {
-  border-bottom: 3px solid #2e89c5;
+.nav-links.active {
+  border-bottom: 5px solid var(--main-color);
 }
 
 @media screen and (max-width: 768px) {
