@@ -28,17 +28,17 @@ const About = ({
   };
 
   // ---
-  const gridTemplate = {
-    gridTemplateAreas: imgStart
-      ? `
-                    'col2 col1'`
-      : `'col1 col2' 
-                `,
-  };
+  // const gridTemplate = {
+  //   gridTemplateAreas: imgStart
+  //     ? `
+  //                   'col2 col1'`
+  //     : `'col1 col2'
+  //               `,
+  // };
 
-  const myDivStyle = {
-    gridTemplateAreas: `"col2 col1"`,
-  };
+  // const myDivStyle = {
+  //   gridTemplateAreas: `"col2 col1"`,
+  // };
 
   //---
 
@@ -86,14 +86,14 @@ const About = ({
                     big={true}
                     dark={true}
                     fontBig={true}
-                    smooth={true}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    duration={500}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
+                    // smooth={true}
+                    // spy={true}
+                    // exact="true"
+                    // offset={-80}
+                    // duration={500}
+                    // primary={primary ? 1 : 0}
+                    // dark={dark ? 1 : 0}
+                    // dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
                   </Button>

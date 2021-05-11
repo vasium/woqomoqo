@@ -26,11 +26,11 @@ const Button = ({
     setHover(false);
   };
 
-  const [open, setOpen] = useState(null);
+  // const [open, setOpen] = useState(null);
 
-  useEffect(() => {
-    setOpen(true);
-  }, []);
+  // useEffect(() => {
+  //   setOpen(true);
+  // }, []);
 
   const prim = primary ? "#2e89c5" : "#010606";
   const sec = secondary ? "#fff" : "#2e89c5";
