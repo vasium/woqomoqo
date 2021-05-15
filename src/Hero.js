@@ -1,7 +1,8 @@
 import "./Hero.css";
-import Video from "../src/videos/video.mp4";
+// import Video from "../src/videos/video.mp4";
 import Button from "./Button";
 import { animateScroll } from "react-scroll";
+import Three from "./Three";
 
 const Hero = () => {
   const vid = document.getElementById("video-bg");
@@ -18,7 +19,7 @@ const Hero = () => {
     <div>
       <div className="hero-container">
         <div className="hero-bg">
-          <video
+          {/* <video
             id="video-bg"
             className="video-bg"
             autoPlay
@@ -26,7 +27,10 @@ const Hero = () => {
             muted
             src={Video}
             type="video/mp4"
-          ></video>
+          ></video> */}
+          <div>
+            <Three />
+          </div>
         </div>
         <div className="hero-content">
           <h1 className="hero-h1">Vasilis Zotikas</h1>

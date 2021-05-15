@@ -1,0 +1,24 @@
+.three {
+  /* position: relative;
+  top: 0;
+  left: 0;
+  outline: none; */
+  /* z-index: 1; */
+  /* background: royalblue; */
+  /* opacity: 0.1; */
+  /* display: flex; */
+  /* justify-content: right; */
+  /* justify-content: right;
+  align-items: right;
+  text-align: right; */
+  /* top: 0;
+  right: 0; */
+  /* align-items: center; */
+  /* width: 50%; */
+  background: rgb(27, 27, 31);
+}
+
+canvas {
+  width: 10%;
+  /* background: rgb(255, 255, 255); */
+}
