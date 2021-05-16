@@ -79,6 +79,8 @@ function Three() {
       height: window.innerHeight,
     };
 
+    plane.position.set(sizes.width / 2000, 0.4, 0);
+
     window.addEventListener("resize", () => {
       // Update sizes
       sizes.width = window.innerWidth;
@@ -91,6 +93,9 @@ function Three() {
       // Update renderer
       renderer.setSize(sizes.width, sizes.height);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      const ttt = sizes.width / 2000;
+      console.log(ttt);
+      plane.position.set(ttt, 0.4, 0);
     });
 
     const camera = new THREE.PerspectiveCamera(
